@@ -58,14 +58,16 @@
           </div>
 
           <!-- signup form -->
-          <div class="signup__form">
+          <form class="signup__form">
             <div class="label__error">
               <label for="email">Email address</label>
               <p class="error__message">Valid email required</p>
             </div>
             <input type="email" name="email" placeholder="email@company.com" />
-            <button>Subscribe to monthly newsletter</button>
-          </div>
+            <button type="button" class="subscribe">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
         </div>
 
         <!-- container right -->
@@ -88,7 +90,7 @@
           <span class="useremail">ash@loremcompany.com</span>. Please open it
           and click the button inside to confirm your subscription.
         </p>
-        <button>Dismiss message</button>
+        <button class="dismiss">Dismiss message</button>
       </div>
 
       <!-- attribution -->
@@ -100,5 +102,8 @@
         <a href="https://www.github.com/thedevangvishnu">Devang Vishnu</a>.
       </div>
     </main>
+
+    <!-- my js -->
+    <script src="script.js"></script>
   </body>
 </html>

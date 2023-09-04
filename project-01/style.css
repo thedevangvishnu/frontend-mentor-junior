@@ -86,6 +86,7 @@ main {
   gap: 1.5rem;
   z-index: 1;
   opacity: 1;
+  transition: all 0.2s ease-in;
 }
 
 /* container left */
@@ -196,6 +197,7 @@ input::placeholder {
   background-color: var(--white-clr);
   border-radius: 1rem;
   z-index: -1;
+  transition: all 0.5s ease-out;
 }
 
 .thankyou__container img {
@@ -224,4 +226,26 @@ input::placeholder {
 .attribution {
   position: absolute;
   bottom: 1rem;
+}
+
+/* ............................................... */
+
+/* css for js */
+
+/* switch states */
+
+.main__container.hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+.thankyou__container.show {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* show error */
+
+.error__message.show__error {
+  opacity: 1;
 }
