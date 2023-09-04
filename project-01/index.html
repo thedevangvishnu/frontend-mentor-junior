@@ -1,52 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Sign-up form start -->
+    <title>P01: Newsletter sign-up form with success message</title>
 
-  Stay updated!
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: tomato;
+      }
+      .attribution a {
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- container -->
+      <div class="main__container">
+        <!-- container left -->
+        <div class="container__left">
+          <!-- content -->
+          <div class="content">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
+            <ul>
+              <li>
+                <img src="./assets/images/icon-list.svg" alt="Tick mark icon" />
+                <span>Product discovery and building what matters</span>
+              </li>
+              <li>
+                <img src="./assets/images/icon-list.svg" alt="Tick mark icon" />
+                <span>Measuring to ensure updates are a success</span>
+              </li>
+              <li>
+                <img src="./assets/images/icon-list.svg" alt="Tick mark icon" />
+                <span>And much more!</span>
+              </li>
+            </ul>
+          </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+          <!-- signup form -->
+          <div class="signup__form">
+            <div class="label__error">
+              <label for="email">Email address</label>
+              <p class="error__message">Valid email required</p>
+            </div>
+            <input type="email" name="email" placeholder="email@company.com" />
+            <button>Subscribe to monthly newsletter</button>
+          </div>
+        </div>
 
-  Email address
-  email@company.com
+        <!-- container right -->
+        <div class="container__right">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        </div>
+      </div>
 
-  Subscribe to monthly newsletter
+      <!-- thankyou container -->
 
-  <!-- Sign-up form end -->
+      <div class="thankyou__container">
+        <!-- icon -->
+        <img
+          src="./assets/images/icon-success.svg"
+          alt="Success icon to indicate confirmation"
+        />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+          <span class="useremail">ash@loremcompany.com</span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button>Dismiss message</button>
+      </div>
 
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!-- attribution -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.github.com/thedevangvishnu">Devang Vishnu</a>.
+      </div>
+    </main>
+  </body>
 </html>
