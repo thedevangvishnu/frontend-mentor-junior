@@ -72,15 +72,17 @@
 
         <!-- container right -->
         <div class="container__right">
-          <img
-            srcset="
-              ./assets/images/illustration-sign-up-mobile.svg  375w,
-              ./assets/images/illustration-sign-up-desktop.svg 400w
-            "
-            sizes="(max-width: 425px) 100vw, 50vw"
-            src="./assets/images/illustration-sign-up-mobile.svg"
-            alt=""
-          />
+          <picture>
+            <source
+              srcset="./assets/images/illustration-sign-up-mobile.svg"
+              media="(max-width: 425px)"
+            />
+            <source srcset="./assets/images/illustration-sign-up-desktop.svg" />
+            <img
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt=""
+            />
+          </picture>
         </div>
       </div>
 
