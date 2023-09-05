@@ -25,11 +25,7 @@ Desktop View - Contains screenshots for normal view and active view.
 
 ![Alt text](./screenshots/desktop.png)
 ![Alt text](./screenshots/desktop-active.png)
-
-Mobile view - Contains screenshots for normal view and active view.
-
-![Alt text](./screenshots/mobile.png)
-![Alt text](./screenshots/mobile-active.png)
+![Alt text](./screenshots/desktop-thankyou.png)
 
 ## My process
 
@@ -49,14 +45,14 @@ Following are the tools/languages that were used to build this project.
 
 I faced one major challenge while creating this project.
 
-- Related to writing the conditional check logic for all input fields, especially email input:
-  In this project, I firstly struggled to write conditional check for all inputs. The main challenge was to write the condition that would check for correct and valid emails. I learned a bit about how Regular Expression could be used for such cases.
+- I was not able to make this design responsive. Not because I couldn't find a way to make the layout responsive, rather I was not able to use responsive images correctly. I tried using scrset and sizes attributes in my HTML, but I am not able to identify the reason of their malfunctioning.
 
 ### Lessons learned
 
-This was a good project. It demanded decent DOM manipulation which led me to practice my JS knowledge. Writing logic for this project taught me some good lessons.
+This was a good project. It demanded decent DOM manipulation which led me to practice my JS knowledge. The biggest lesson for me was to figure out how I could use responsive images, which I was not able to.
+I tried and tested many approaches but they all seem to not be working.
 
-It took decent amount of CSS to style, though felt fairly easy. Had fun strengthening my flexbox concepts.
+It took decent amount of CSS to style, though felt fairly easy.
 
 ## Author
 
