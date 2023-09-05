@@ -34,6 +34,13 @@ const switchState = () => {
   thankyouContainer.classList.add("show");
 };
 
+// update email in thankyou message
+const updateEmail = () => {
+  let userEmail = document.querySelector(".useremail");
+  userEmail.textContent = input.value;
+  console.log(userEmail);
+};
+
 // switch to thankyou state when form is submitted
 
 subscribeBtn.addEventListener("click", (e) => {
@@ -41,6 +48,7 @@ subscribeBtn.addEventListener("click", (e) => {
   //   switch states only if input is valid, othervise pop error message
   if (isValidEmail(input.value)) {
     switchState();
+    updateEmail();
   } else {
     showError();
   }
