@@ -72,7 +72,15 @@
 
         <!-- container right -->
         <div class="container__right">
-          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+          <img
+            srcset="
+              ./assets/images/illustration-sign-up-mobile.svg  375w,
+              ./assets/images/illustration-sign-up-desktop.svg 400w
+            "
+            sizes="(max-width: 425px) 100vw, 50vw"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+          />
         </div>
       </div>
 
