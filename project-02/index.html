@@ -1,37 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- my css file -->
+    <link rel="stylesheet" href="style.css" />
 
-  Day
-  DD
+    <title>P02: Age calculator app</title>
 
-  Month
-  MM
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        color: hsl(0, 1%, 44%);
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(259, 100%, 65%);
+        text-decoration: none;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- container -->
+      <div class="container">
+        <!-- form -->
+        <div class="form__container">
+          <form action="">
+            <!-- day -->
+            <div class="form__items">
+              <label for="day">DAY</label>
+              <input type="text" name="day" placeholder="DD" />
+            </div>
+            <!-- month -->
+            <div class="form__items">
+              <label for="month">MONTH</label>
+              <input type="text" name="month" placeholder="MM" />
+            </div>
+            <!-- year -->
+            <div class="form__items">
+              <label for="year">YEAR</label>
+              <input type="text" name="year" placeholder="YYYY" />
+            </div>
+          </form>
+        </div>
 
-  Year
-  YYYY
+        <!-- button -->
+        <div class="button__container">
+          <div class="line"></div>
+          <button>
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="Arrow button to show result"
+            />
+          </button>
+        </div>
 
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- result -->
+        <div class="result__container">
+          <!-- years -->
+          <div class="result__items">
+            <h2><span class="years">38</span> years</h2>
+          </div>
+          <!-- months -->
+          <div class="result__items">
+            <h2><span class="months">--</span> months</h2>
+          </div>
+          <!-- days -->
+          <div class="result__items">
+            <h2><span class="days">--</span> days</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- attribution -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.github.com/thedevangvishnu">Devang Vishnu</a>.
+      </div>
+    </main>
+  </body>
 </html>
