@@ -19,6 +19,12 @@
   --input-size: 24px;
 }
 
+@media screen and (max-width: 580px) {
+  :root {
+    --input-size: 18px;
+  }
+}
+
 /* base */
 
 * {
@@ -182,4 +188,49 @@ button img {
 .attribution {
   position: absolute;
   bottom: 1rem;
+}
+
+/* .................................................... */
+
+@media screen and (max-width: 580px) {
+  .container {
+    width: 350px;
+    height: 380px;
+    padding: 2rem 1.5rem;
+  }
+
+  form {
+    padding-bottom: 0.85rem;
+  }
+
+  label {
+    font-size: 0.6rem;
+  }
+
+  input {
+    width: 80px;
+    padding: 0.6rem 0.85rem;
+  }
+
+  .error__message {
+    font-size: 0.5rem;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  button {
+    padding: 0.75rem;
+  }
+
+  button img {
+    width: 24px;
+    height: 22px;
+  }
+
+  .result__items h2 {
+    font-size: 52px;
+    margin-bottom: -1rem;
+  }
 }
