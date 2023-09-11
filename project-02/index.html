@@ -39,19 +39,22 @@
         <div class="form__container">
           <form action="">
             <!-- day -->
-            <div class="form__items">
+            <div class="form__items day__item">
               <label for="day">DAY</label>
               <input type="text" name="day" placeholder="DD" />
+              <p class="error__message"></p>
             </div>
             <!-- month -->
-            <div class="form__items">
+            <div class="form__items month__item">
               <label for="month">MONTH</label>
               <input type="text" name="month" placeholder="MM" />
+              <p class="error__message"></p>
             </div>
             <!-- year -->
-            <div class="form__items">
+            <div class="form__items year__item">
               <label for="year">YEAR</label>
               <input type="text" name="year" placeholder="YYYY" />
+              <p class="error__message"></p>
             </div>
           </form>
         </div>
@@ -71,7 +74,7 @@
         <div class="result__container">
           <!-- years -->
           <div class="result__items">
-            <h2><span class="years">38</span> years</h2>
+            <h2><span class="years">--</span> years</h2>
           </div>
           <!-- months -->
           <div class="result__items">
@@ -93,5 +96,8 @@
         <a href="https://www.github.com/thedevangvishnu">Devang Vishnu</a>.
       </div>
     </main>
+
+    <!-- js -->
+    <script src="script.js"></script>
   </body>
 </html>

@@ -96,12 +96,31 @@ input {
   width: 110px;
   border: 1px solid var(--light-gray-clr);
   border-radius: 6px;
+  font-weight: 700;
 }
 
 input::placeholder {
   font-size: var(--input-size);
   font-weight: 700;
   color: var(--smokey-gray-clr);
+}
+
+.error__message {
+  max-height: 0;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--light-red-clr);
+  font-style: italic;
+}
+
+/* for errors */
+
+label.error {
+  color: var(--light-red-clr);
+}
+
+input.error {
+  border: 1px solid var(--light-red-clr);
 }
 
 /* button container */
@@ -147,7 +166,7 @@ button img {
 .result__items h2 {
   font-size: 68px;
   font-style: italic;
-  font-weight: bolder;
+  font-weight: 700;
   margin-bottom: -1.75rem;
   color: var(--off-black);
 }
