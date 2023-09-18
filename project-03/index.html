@@ -46,29 +46,33 @@
           </a>
 
           <!-- nav toggle -->
-          <div class="nav__toggle">
-            <i class="ri-menu-line icon nav__harmburger"></i>
-            <i class="ri-close-line icon nav__close"></i>
+          <div class="nav__toggle" id="nav-hamburger">
+            <i class="ri-menu-line icon nav__hamburger"></i>
           </div>
 
           <!-- nav menu -->
-          <ul class="nav__menu">
-            <li class="menu__item">
-              <a href="#">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="#">New</a>
-            </li>
-            <li class="menu__item">
-              <a href="#">Popular</a>
-            </li>
-            <li class="menu__item">
-              <a href="#">Trending</a>
-            </li>
-            <li class="menu__item">
-              <a href="#">Categories</a>
-            </li>
-          </ul>
+          <div class="nav__menu" id="nav-menu">
+            <div class="nav__toggle" id="nav-close">
+              <i class="ri-close-line icon nav__close"></i>
+            </div>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">New</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Popular</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Trending</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Categories</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
@@ -80,7 +84,12 @@
             <!-- left image -->
             <div class="left__img">
               <picture>
+                <source
+                  srcset="./assets/images/image-web-3-mobile.jpg"
+                  media="(max-width: 520px)"
+                />
                 <source srcset="./assets/images/image-web-3-desktop.jpg" />
+
                 <img
                   src="./assets/images/image-web-3-desktop.jpg"
                   alt="Web 3 image"
@@ -186,5 +195,8 @@
         <a href="https://github.com/thedevangvishnu">Devang Vishnu</a>.
       </div>
     </footer>
+
+    <!-- my js file -->
+    <script src="script.js"></script>
   </body>
 </html>
