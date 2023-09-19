@@ -241,8 +241,6 @@ nav {
 /* bottom section */
 
 .bottom__section {
-  /* height: 20%; */
-  /* border: 1px solid black; */
   width: 100%;
   padding-block: 3rem;
 }
@@ -380,7 +378,7 @@ nav {
     gap: 1rem;
     opacity: 0;
     pointer-events: none;
-    z-index: 100;
+    z-index: 2;
     transition: opacity 0.3s, right 0.3s ease-out;
     box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
   }
@@ -433,7 +431,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.5s ease-in-out;
   pointer-events: none;
