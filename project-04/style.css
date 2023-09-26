@@ -107,7 +107,8 @@ main {
 
 .mark__all:hover,
 .people:hover,
-.post:hover {
+.post:hover,
+.mark__read:hover {
   color: var(--blue-clr);
 }
 
@@ -121,11 +122,13 @@ main {
 }
 
 .item {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   padding: 0.75rem;
   border-radius: 0.15rem;
+  background-color: var(--very-light-grayish-blue);
 }
 
 .item__img img {
@@ -169,7 +172,7 @@ main {
   height: 6px;
   border-radius: 50%;
   background-color: var(--red-clr);
-  opacity: 0;
+  opacity: 1;
 }
 
 .item__date {
@@ -197,6 +200,8 @@ main {
 
 .item__user__pic {
   margin-left: auto;
+  padding-bottom: 0.75rem;
+  padding-right: 0.25rem;
 }
 
 .item__user__pic img {
@@ -204,12 +209,18 @@ main {
   height: auto;
 }
 
-/* .................................................. */
-
-.unread {
-  opacity: 1;
+.special {
+  position: absolute;
+  bottom: 0rem;
+  right: 0.5rem;
 }
 
-.unread__msg {
-  background-color: var(--very-light-grayish-blue);
+/* .................................................. */
+
+.hide {
+  opacity: 0;
+}
+
+.item__read {
+  background-color: var(--white-clr);
 }
